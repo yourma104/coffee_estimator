@@ -1,0 +1,117 @@
+h1 {
+    width: 1000px;
+    color: #333; /* Modern, understated color. You can choose any color you prefer. */
+    font-family: Arial, sans-serif; /* Modern sans-serif font options */
+    font-size: 2.5em; /* Larger, bold font size */
+    font-weight: lighter; /* Lighter font-weight makes it look more modern *//* Making the text uppercase can give it a modern look */
+    letter-spacing: 3px; /* Increasing spacing between the letters */
+    margin-bottom: 30px; /* Adding some space below the heading */
+    text-align: center; /* Center-align the text */
+    padding: 10px; /* Optional: Adds a bit of padding around the text */
+    border-radius: 10px; /* Optional: If you have a background color, this rounds the corners of it */
+    background-color: #C1CADA; /* Optional: Light grey background, or choose another light color */
+    display: inline-block; /* Helps in giving padding and optionally a background color */
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2); /* Optional: Adds a slight shadow effect */
+}
+
+/* Adding some global style for a modern look */
+body {
+    background-color: #fafafa; /* Very light grey used often in modern design */
+    /* other properties... */
+}
+
+
+
+/* Reset the margin and padding */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Full height of the viewport */
+    width: 100%; /* Full width of the viewport */
+}
+
+body {
+    display: flex; /* establishes this container as a flexbox */
+    justify-content: center; /* center items horizontally, in this case */
+    align-items: center; /* center items vertically, in this case */
+    flex-direction: column; /* stack flex items from top to bottom */
+    font-family: Arial, sans-serif; /* Optional: sets a more readable default font */
+}
+
+/* Optional: Adds some spacing between the header and the chart container */
+h1 {
+    margin-bottom: 20px;
+}
+
+/* Style for the chart container */
+.chart-container {
+    width: 50%; /* or any specific size */
+    /* Optional: In case you want a minimum width */
+    min-width: 300px; /* adjust based on your preference */
+}
+
+/* Optional: If you want to center the content within the chart container */
+.canvas-style {
+    display: block;
+    margin: auto;
+}
+
+
+
+#logo {
+    height: 10px; /* Adjust based on the size of your logo */
+    width: auto; /* Keeps the aspect ratio of your logo */
+    vertical-align: middle; /* Aligns the logo vertically with the text */
+    margin-right: 20px; /* Optional: for some space between the logo and the text */
+}
+
+
+
+/* Styles for the submit button */
+input[type="submit"] {
+    /* Typography */
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* Use a modern font family */
+    font-size: 16px; /* Standard font size */
+    color: white; /* Text color */
+
+    /* Box Model */
+    padding: 12px 25px; /* Padding around text */
+    margin: 10px; /* Space around element */
+    
+    /* Background */
+    background-color: #C1CADA; /* A nice shade of green */
+    
+    /* Border */
+    border: none; /* Remove default borders */
+    border-radius: 5px; /* Slightly rounded corners */
+
+    /* Visual Interactions */
+    cursor: pointer; /* Cursor changes to a hand when you hover over it */
+    transition: background-color 0.3s; /* Smooth background-color transition */
+}
+
+/* Change the background color on hover */
+input[type="submit"]:hover {
+    background-color: #A3ACBC; /* A darker shade of green */
+}
+
+
+
+.button {
+    background-color: #A3ACBC;
+    outline: 1px solid #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: none;
+    width: 85px;
+    height: 25px;
+}
+
+.button:hover {
+    background-color: #949DAD;
+}
+
+

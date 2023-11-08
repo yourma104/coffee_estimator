@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Data Display</title>
+    <!-- Include the Chart.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" type="text/css" href="static/chart.css">
+</head>
+<body>
+
+    <!-- Content of the page -->
+    <h1>Coffee Characteristics</h1>
+
+    <!-- Placeholder for the chart with smaller dimensions -->
+    <div style="width: 50%; /* Adjusting the width to 50% of its container */">
+        <canvas id="coffeeChart"></canvas>
+    </div>
+
+    <!-- Script to create the chart -->
+    <script>
+        // Parse the data from the Django context into JavaScript variables
+        var aroma = {{ aroma }};
+        var flavor = {{ flavor }};
+        var aftertaste = {{ aftertaste }};
+        var body = {{ body }};
+        var sweetness = {{ sweetness }};
+
+        // Prepare data and labels
+        var dataValues = [aroma, flavor, aftertaste, body, sweetness];
+        var dataLabels = ['Aroma', 'Flavor', 'Aftertaste', 'Body', 'Sweetness'];
+
+        // Select the canvas element
+        var ctx = document.getElementById('coffeeChart').getContext('2d');
+
+        // Create a new Chart object
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: dataLabels.map((label, index) => `${label} (${dataValues[index]})`), // Show values in labels
+                datasets: [{
+                    data: dataValues,
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                    ],
+                    borderColor: [
+                        'rgba(0, 0, 0, 1)',
+                        'rgba(0, 0, 0, 1)',
+                        'rgba(0, 0, 0, 1)',
+                        'rgba(0, 0, 0, 1)',
+                        'rgba(0, 0, 0, 1)',
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                indexAxis: 'y',
+                plugins: {
+                    legend: {
+                        display: false  // This ensures the legend is not displayed
+                    }
+                },
+                scales: {
+                    x: {
+                        beginAtZero: true,
+                        max: 10,  // since your data varies from 1-10
+                        grid: {
+                            display: false // This will remove the background grid
+                        }
+                    },
+                    y: {
+                        grid: {
+                            display: false // This will remove the background grid
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+
+
+    <a href="/" class="button">New Coffee</a>
+
+     
+</body>
+</html>

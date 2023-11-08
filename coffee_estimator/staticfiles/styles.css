@@ -1,0 +1,111 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  background-color: #C1CADA;
+  color: #333;
+  font-size: 60px;
+  padding: 20px;
+  outline: 1px solid black;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #C1CADA;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input[type="text"] {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+input[type="submit"] {
+  margin-top: 20px;
+  background-color: #A3ACBC;
+  outline: 1px solid #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #949DAD;
+}
+
+
+#logo {
+  height: 70px; /* Adjust based on the size of your logo */
+  width: auto; /* Keeps the aspect ratio of your logo */
+  vertical-align: middle; /* Aligns the logo vertically with the text */
+  margin-right: -10px; /* Optional: for some space between the logo and the text */
+  margin-bottom: 10px; /* Optional: for some space between the logo and the text */
+}
+
+
+.button {
+  background-color: #A3ACBC;
+  outline: 1px solid #333;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  text-decoration: none;
+  width: 60px;
+  height: 30px;
+}
+
+
+
+.button:hover {
+  background-color: #949DAD;
+}
+
+
+.container {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+
+/* Style the label */
+/* Style the input */
+/* styles.css */
+/* Common styling for input fields */
+.input-field {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  outline: none;
+  width: 80%; /* Expand the input to fill its container */
+}
+
+/* Style the input when focused */
+
+/* Style the datalist (dropdown) */
+
+
+
+/* Style the label */

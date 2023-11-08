@@ -1,0 +1,104 @@
+/* Reset some default styles */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color and font styles for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* Style the header with a background color and centered text */
+header {
+    background-color: #A3ACBC;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Style the main content area */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style sections with a subtle background color and padding */
+section {
+    color: #333;
+    background-color: #A3ACBC;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style headings */
+h1, h2 {
+    color: #333;
+}
+
+/* Style lists */
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Style the footer with a background color and centered text */
+footer {
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Add a bit of spacing to paragraphs within sections */
+section p {
+    margin-bottom: 15px;
+}
+
+/* Add some spacing between list items */
+ul li {
+    margin-bottom: 5px;
+}
+
+
+.button {
+    background-color: #A3ACBC;
+    outline: 1px solid #333;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: none;
+    width: 60px;
+    height: 30px;
+}
+
+.button:hover {
+    background-color: #949DAD;
+}
+
+.container {
+    text-align: center;
+}
+
+
+footer{
+    background-color: #A3ACBC;
+    color: #333;
+}
+
+
+.list-video-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Style the video container */
+.video-container {
+    margin-left: 20px; /* Add some space between the list and the video */
+}
